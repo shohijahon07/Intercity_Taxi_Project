@@ -1,0 +1,157 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.register_con{
+  width: 100%;
+  max-width: 500px;
+  margin-top: 40px;
+  background-color: #E1E5F1;
+  border-radius: 15px;
+  padding: 20px;
+  margin:  20px auto;
+}
+.text_rg{
+font-family: 'Inter', sans-serif;
+font-size: 24px;
+font-weight: 700;
+line-height: 28.78px;
+text-align: center;
+}
+.file_rg{
+  width: 40px;
+  height: 30px;
+  margin-left: 5px;
+}
+.btn_rg{
+  width: 100%;
+margin-left: 0px;
+height: 40px;
+background: #303383;
+border: none;
+border-radius: 8px;
+color:#fff;
+}
+
+.custom-file-upload {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-file-upload input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload label {
+    padding: 5px;
+    width: 100%;
+    height: 38px;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .upload-icon {
+  /* margin-right: 240px; */
+    width: 44px;
+    height: 25px; /* Adjust size as needed */
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  
+  .modal_rg {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .modal_rg.success {
+    color: #11e411; /* Green for success */
+  }
+  
+  .modal_rg.error {
+    color: #ff0000; /* Red for error */
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px; /* Adjust the width as needed */
+    max-width: 90%; /* Ensures responsiveness on smaller screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none; /* Removes default focus outline */
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 40px;  /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    background: none; /* No background color */
+    border: none; /* No border */
+    font-size: 20px; /* Adjust font size for the "X" */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remove padding */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
+    border-radius: 50%; /* Make the button circular */
+  }
+  
+  .modal-close-btn:hover {
+    color: #ff0000; /* Change color on hover */
+  }
+  
+@media screen and (max-width:520px) {
+  .register_con{
+    width: 100%;
+    background-color: #E1E5F1;
+    max-width: 400px;
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 20px;
+  
+  }
+  @media screen and (max-width:420px) {
+    .register_con{
+      width: 100%;
+      background-color: #E1E5F1;
+      max-width: 100%;
+      border-radius: none !important;
+      height: 100% !important;
+      padding: 20px;
+    margin-top: 0px !important;
+    }
+    body{
+      background-color:#E1E5F1 ;
+    }
+
+    
+  }
+}

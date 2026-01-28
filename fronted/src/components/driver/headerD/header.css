@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.haederDriver{
+    padding: 0 20px;
+    height:86.29px;
+    max-width:1920px;
+    height: 100px;
+    margin:0 auto;
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+    background-color:#E1E5F1;
+    border-bottom:1px solid  #000000;
+
+    
+}
+ .img_dr_logo{
+width:220px ;
+height: 38px ;
+}
+
+.headerText{
+    display: flex;
+    gap: 2px;
+}
+.headerRight{
+    width: 800px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.listUl{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    align-items:center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 0 !important;
+    position: relative;
+    padding: 0 !important;
+    margin-top:20px;
+    /* border: 1px solid black; */
+}
+.listUl2{
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    padding-bottom: 0 !important;
+    justify-content: space-around;
+    position: relative;
+    padding: 0 !important;
+    margin-top:20px;
+    text-align: end;
+    /* border: 1px solid black; */
+}
+.list-group-item1 {
+    font-family: 'Inter', sans-serif;
+    display: inline; /* Ensures the border wraps tightly around the text */
+    font-weight: 400;
+    font-size: 32px !important;
+    cursor: pointer;
+     position: relative;
+     line-height: 38px;
+    list-style-type: none;
+    padding: 0; /* Removes padding around the text */
+    margin: 0; /* Removes margin around the text */
+    text-shadow: 
+        0.71px 0 0 #303383,  
+        -0.71px 0 0 #303383,
+        0 0.71px 0 #303383, 
+        0 -0.71px 0 #303383; 
+}
+.list-group-item2 {
+    font-family: 'Inter', sans-serif;
+    display: inline; /* Ensures the border wraps tightly around the text */
+    font-weight: 400;
+    font-size: 32px !important;
+    cursor: pointer;
+    line-height: 38px;
+     position: relative;
+    list-style-type: none;
+    padding: 0; /* Removes padding around the text */
+    margin: 0; /* Removes margin around the text */
+    text-shadow: 
+        0.71px 0 0 #303383,  
+        -0.71px 0 0 #303383,
+        0 0.71px 0 #303383, 
+        0 -0.71px 0 #303383; 
+}
+.list-group-item1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    width: 0; /* Initial width of 0 to hide the underline */
+    height: 3px;
+    background-color: #303383;
+    transition: width 1s ease-in-out; /* Smooth transition for underline */
+}
+.list-group-item1:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+.list-group-item2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    width: 0; /* Initial width of 0 to hide the underline */
+    height: 3px;
+    background-color: #303383;
+    transition: width 1s ease-in-out; /* Smooth transition for underline */
+}
+.list-group-item2:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+.list-group-item3 {
+    font-family: 'Inter', sans-serif;
+    display: inline; /* Ensures the border wraps tightly around the text */
+    font-weight: 400;
+    font-size: 32px !important;
+    cursor: pointer;
+    line-height: 38px;
+    list-style-type: none;
+    padding: 0; /* Removes padding around the text */
+    margin: 0; /* Removes margin around the text */
+    text-shadow: 
+        0.71px 0 0 #303383,  
+        -0.71px 0 0 #303383,
+        0 0.71px 0 #303383, 
+        0 -0.71px 0 #303383; 
+}
+.language_dr{
+    background-color:#E1E5F1;
+border:none;
+font-size: 19px !important;
+    font-weight: 300;
+    line-height: 35px;
+    color: #303383 !important;
+    padding: 5px;
+}
+.language_dr .option_dr{
+    font-size: 19px !important;
+    font-weight: 400;
+    line-height: 35px;
+    color: #303383 !important;
+
+}
+.list-group-item1  .list-group-item2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; 
+    width: 0;
+    height: 3px;
+    
+    background-color: #303383;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width:883px) {
+    .haederDriver{
+        height: 80px;
+    }
+    .img_dr_logo{
+        width: 170px !important;
+        height: 30px !important;
+    }
+    .list-group-item1{
+        font-size: 25px !important;
+    }
+    .list-group-item2{
+        font-size: 25px !important;
+    }
+    .listUl2{
+        max-width: 170px;
+    }
+    
+}
+@media screen and (max-width:685px) {
+    .haederDriver{
+        height: 60px;
+    }
+    .img_dr_logo{
+        width: 130px !important;
+    }
+    .list-group-item1{
+        font-size: 20px !important;
+        text-shadow: 
+        0.41px 0 0 #303383,  
+        -0.41px 0 0 #303383,
+        0 0.41px 0 #303383, 
+        0 -0.41px 0 #303383; 
+    }
+    .list-group-item2{
+        font-size: 20px !important;
+        text-shadow: 
+        0.41px 0 0 #303383,  
+        -0.41px 0 0 #303383,
+        0 0.41px 0 #303383, 
+        0 -0.41px 0 #303383; 
+    }
+    .language_dr{
+        font-size: 18px !important;
+    }
+    .listUl2{
+        max-width: 130px;
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width:563px) {
+    .haederDriver{
+        padding-right: -150px !important;
+    }
+    .img_dr_logo{
+        width: 100px !important;
+    }
+    .listUl{
+    }
+    .list-group-item1{
+        font-size: 17px !important;
+    }
+    .list-group-item2{
+        font-size: 17px !important;
+    }
+    .listUl2{
+        max-width: 60px !important;
+
+    }
+    .language_dr{
+        width:53px;
+        font-size: 15px !important;
+        padding-left:0 !important;
+        padding-right:0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .language_dr .option_dr{
+font-size: 17px !important;
+    };
+
+}
+@media screen and (max-width:420px)  {
+    .img_dr_logo{
+        width: 80px !important;
+    }
+    .list-group-item1{
+        font-size: 14px !important;
+    }
+    .list-group-item2{
+        font-size: 14px !important;
+    }
+    .language_dr{
+        font-size: 14px !important;
+    }
+.listUl{
+    max-width: 175px;
+}
+.imgTelegram{
+    display: none;
+}
+.center{
+}
+    .listUl2{
+        width: 50px;
+    }
+}
+@media screen and (max-width:365px) {
+    .img_dr_logo{
+        width: 60px !important ;
+
+    }
+    .list-group-item1{
+        font-size: 10px !important;
+    }
+    .list-group-item2{
+        font-size: 10px !important;
+    }
+    .language_dr{
+        font-size: 10px !important;
+    }
+    .language_dr .option_dr{
+        font-size: 12px !important;
+    }
+    .listUl{
+        max-width: 140px !important;
+    }
+}
+

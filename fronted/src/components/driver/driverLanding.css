@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.container_dr{
+  width:100%;
+  max-width: 14450px;
+
+}
+.header_dr{
+  color:#fff;
+  font-size: 59px;
+  font-weight: 700;
+}
+.container_dr_about{
+  /* background-image: url("../../pictures/all.svg"); */
+
+}
+.begin1{
+  background-color: #fff;
+  /* background-image: url("../../pictures/all.svg"); */
+
+}
+.inputs{
+ 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.inputChild{
+    
+}
+.inputs p{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.buttonSave{
+
+      display: flex;
+    justify-content: end;
+}
+.saqlash{
+    border:none;
+    margin-top: 20px;
+    background-color: #0E5344;
+               border: none;
+               color: #fff;
+               padding: 8px 16px;
+               font-size: '16px';
+               border-radius: 50px;
+               justify-content:end;
+               cursor: pointer;
+               height: 40px;
+               width: 135px;
+
+  
+}
+.saqlash1{
+    border:none;
+    background-color: #0E5344;
+               border: none;
+               color: #fff;
+               padding: 8px 16px;
+               font-size: 17px;
+               border-radius: 5px;
+               justify-content:end;
+               cursor: pointer;
+               margin-left: 5px;
+               height: 45px;
+               width: 90px;
+
+  
+}
+.saqlash2{
+    border:none;
+    margin-top: 30px;
+    background-color: #0E5344;
+               border: none;
+               color: #fff;
+               padding: 8px 16px;
+               font-size: 17px;
+               border-radius: 5px;
+               justify-content:end;
+               cursor: pointer;
+               margin-left: 5px;
+               height: 45px;
+               width: 90px;
+
+  
+}
+.editButton{
+    background-color: #FFF84F;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 90px;
+    font-size: 16x;
+    border:none;
+    height: 45px;
+  }
+  .deleteButton{
+    background-color: #F42222;
+    border: 1px solid gray;
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 90px;
+    height: 45px;
+    border:none;
+    margin-left:10px;
+  }
+  .list-group{
+max-width: 800px;
+margin: 0 auto;
+background-image: url(../../pictures/all.svg);
+  }
+  .list-group-item{
+  /* justify-content: space-between; */
+    display: flex;
+    /* border: 1px solid #CFDEE6;
+      /* padding: 10px; */
+      margin-top: 20px;   
+
+
+  }
+  .list-group-item input{
+   width: 250px;
+  }
+  .imageTable{
+    width: 100px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px px;
+
+  }
+  .imputFile{
+    /* display: flex; */
+    /* align-items:center; */
+  }
+  .imputFile p{
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+  }
+  .Text-driver{
+    gap: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .Text-driver input{
+    width: 300px;
+    height: 50px;
+  }
+  .driverFooterAbout p{
+   margin: 0;
+   padding: 0;
+  }
+  .driverFooterAbout{
+    margin: 20px 0;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }

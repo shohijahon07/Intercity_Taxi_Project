@@ -1,0 +1,223 @@
+.option-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dimlangan fon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.6s ease-in-out;
+    z-index: 1;
+}
+
+.option-modal {
+    background: #E1E5F1;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 600px; /* Sizga mos keladigan kenglikni tanlang */
+    max-height: 1000px; /* Modalning maksimal balandligi */
+    overflow-y: auto; /* Modal ichida aylanish */
+    transform: scale(0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.option-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.fromCityLi {
+    margin: 10px;
+    padding: 25px;
+    color: #26404D;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-size: 25px;
+    border: 1px solid #CFDEE6;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+}
+
+/* When modal is active */
+.option-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.option-modal-overlay.active .option-modal {
+    transform: scale(1);
+}
+.CityH1{
+    margin-top: 30px;
+    text-align: center;
+}
+.CityH1 p{
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 33px;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 640px) {
+    
+    .option-modal {
+        background: #E1E5F1;
+        padding: 20px;
+        border-radius: 0px;
+        position: relative;
+        width: 100%; /* Sizga mos keladigan kenglikni tanlang */
+        height: 100%; /* Modalning maksimal balandligi */
+        
+    }
+    .btn12{
+        font-size: 25px;
+        font-weight: 700;
+        color:black;
+    }
+    .option-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .option-list li {
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fromCityLi {
+        margin: 10px;
+        padding: 25px;
+        color: #26404D;
+        cursor: pointer;
+        font-family: 'medium';
+        font-size: 30px;
+        border: 1px solid #CFDEE6;
+        border-radius: 15px;
+        background-color: #fff;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+    }
+    .CityH1{
+        margin-top: 70px;
+        text-align: start;
+        margin-left: 15px;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 449px) {
+    
+    .option-modal {
+        background: #E1E5F1;
+        padding: 20px;
+        border-radius: 0px;
+        position: relative;
+        width: 100%; /* Sizga mos keladigan kenglikni tanlang */
+        height: 100%; /* Modalning maksimal balandligi */
+        
+    }
+    .btn12{
+        font-size: 22px;
+        font-weight: 700;
+        color:black;
+    }
+    .option-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .option-list li {
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fromCityLi {
+        margin: 10px;
+       
+        padding-left: 30px;
+        font-weight:300 ;
+        color: #26404D;
+        cursor: pointer;
+        font-family: 'medium';
+        font-size: 24px;
+        border: 1px solid #CFDEE6;
+        border-radius: 15px;
+        background-color: #fff;
+        width: 100%;
+        height: 60px;
+        text-align: start;
+        /* border: 0.2px solid #000000; */
+    }
+    .CityH1{
+        margin-top: 50px;
+        font-size: 25px;
+        text-align: start;
+        margin-left: 15px;
+    }
+}
+@media (max-width: 349px) {
+    
+    .option-modal {
+        background: #E1E5F1;
+        padding: 20px;
+        border-radius: 0px;
+        position: relative;
+        width: 100%; /* Sizga mos keladigan kenglikni tanlang */
+        height: 100%; /* Modalning maksimal balandligi */
+        
+    }
+    .btn12{
+        font-size: 20px;
+        font-weight: 700;
+        color:black;
+    }
+    .option-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .option-list li {
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fromCityLi {
+        margin: 10px;
+       
+        padding-left: 30px;
+        font-weight:300 ;
+        color: #26404D;
+        cursor: pointer;
+        font-family: 'medium';
+        font-size: 20px;
+        border: 1px solid #CFDEE6;
+        border-radius: 15px;
+        background-color: #fff;
+        width: 100%;
+        height: 50px;
+        text-align: start;
+        /* border: 0.2px solid #000000; */
+    }
+    .CityH1{
+        margin-top: 50px;
+        font-size: 22px;
+        text-align: start;
+        margin-left: 15px;
+    }
+}

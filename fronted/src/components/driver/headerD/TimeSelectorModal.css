@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+body {
+  font-family: 'Alice', serif;
+}
+.time-selector-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  touch-action: none;
+}
+
+.time-selector-modal {
+  background: white;
+  width: 300px;
+  padding:10px 20px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.time-selector-header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.time-selector-header h2{
+  margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.btn-close {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.time-selector-body {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.time-selector-picker {
+  margin: 0 auto;
+  /* border:1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-selector-column {
+  width: 100px;
+  height: 200px; /* Adjust height for 5 items */
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner-item {
+  font-family: 'Inter';
+  font-size: 20px; 
+  line-height: 40px;
+  height: 40px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.spinner-item.selected {
+  color: blue;
+  font-size: 24px; 
+  font-weight: 400;
+  
+}
+
+.time-selector-divider {
+  font-size: 36px;
+  font-family: 'Alice', serif;
+  font-weight: 400;
+  color: #00f;
+  line-height: 50px;
+}
+
+.time-selector-actions {
+  margin-top: 20px;
+}
+
+.btn-confirm {
+  background-color: #00f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media  (max-width: 500px) {
+  .time-selector-modal {
+    width: 250px;
+    
+  }
+  .spinner-item {
+    font-size: 18px !important; 
+    line-height: 40px;
+    height: 40px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .spinner-item.selected {
+    font-family: 'Inter', serif;
+    color: blue;
+    font-size: 30px; 
+    font-weight: 400;
+    
+  }
+  
+  .time-selector-divider {
+    font-size: 30px;
+    font-family: 'Alice', serif;
+;
+  }
+  .btn-confirm {
+    font-size: 14px;
+  }
+  .time-selector-column {
+    width: 70px;
+    height: 200px; /* Adjust height for 5 items */
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+}
+.exi{
+  background-color:transparent;
+  border:none;
+  font-size: 20px;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .big_mean {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+  max-width: 100%;
+  }
+  
+  .card{
+    margin: 0;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+
+    // border:1px solid black;
+  }
+  
+  
+  .card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input-field {
+    position: relative;
+    margin-bottom: 10px;
+    
+  }
+  
+  .input-field input {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+    border:none;
+    // border:1px solid black;
+    padding: 10px 40px 10px 15px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-field input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .buttonS {
+    background-color: #0081ff;
+    color: #ffffff;
+    border: none;
+    width: 170px;
+    font-size: 15px;
+    height: 50px;
+    cursor: pointer;
+    border-radius:15px;
+    transition: background-color 0.3s ease;
+  
+        margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.eye-icon:hover {
+    color: #007BFF;
+}
+  .buttonS:hover {
+    background-color: #ff4f70;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 80%;
+    }
+  }
+  
+  

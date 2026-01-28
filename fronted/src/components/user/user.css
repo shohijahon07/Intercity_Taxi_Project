@@ -1,0 +1,5839 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body{
+    li{
+        cursor: pointer;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imageBacground {
+    background-image: url("../../pictures/all.svg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: auto; 
+    box-sizing: border-box; 
+}
+.backgroundColor{
+    background-color:#000000A1;
+    padding: 0 20px; 
+}
+.routUser{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color:white;
+    border-radius:0px, 0px, 5px, 5px;
+}
+.fatherNavbar{
+    background-color:#E1E5F1;
+}
+.navbar{
+   padding: 0 20px;
+    border-bottom: 1px solid #000000;
+    max-width: 1920px;
+    height: 108px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoImg{
+ object-fit: scale-down;
+ vertical-align: baseline;
+ width: 100%;
+ height: 100%;
+}
+.middleUserHeader{
+    display: flex;
+   width: 650px;
+   /* border:1px solid; */
+   align-items:center;
+   justify-content: space-between;
+}
+.navbarUl{
+   width: 100%;
+   display: flex;
+   align-items:center;
+   justify-content: space-between;
+}
+.navbarUl li{
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.73px;
+}
+.navbarUl li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* 2px pastroq */
+    width: 0;
+    height: 3px;
+    
+    background-color: #303383;
+    transition: width 1s ease-in-out;
+}
+
+.navbarUl li:hover::after {
+    width: 100%;
+    
+}
+.navbarUl li:hover {
+    cursor: pointer;
+    text-shadow: 
+        -0.5px 0 0 #303383, /* chapga */
+        0.5px 0 0 #303383,  /* o'ngga */
+        0 -0.5px 0 #303383, /* yuqoriga */
+        0 0.5px 0 #303383;  /* pastga */
+}
+.imgTelegram{
+    width: 40px;
+    height: 40px;
+}
+
+
+.rightUserHeader{
+width: 252px;
+display: flex;
+align-items:center;
+justify-content: space-between;
+}
+
+
+.rightUserHeader select{
+    border:none;
+        width: 145px;
+        height: 49px;
+        background-color:transparent;
+        font-weight: 500;
+        font-size: 25px;
+        /* line-height: 35.75; */
+        color:#303383;
+        font-family: 'Inter', sans-serif;
+}
+
+.userButtons{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* border:1px solid black; */
+    gap: 20px;
+}
+.saqlash3{
+    width: 90px;
+    font-size: 12px;
+    height: 50px;
+    border: none;
+    background-color: rgba(30, 110, 110, 0.884);
+    color: white;
+    border-radius: 5px;
+}
+.btnCity{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items:center;
+    border-radius: 15px;
+    background-color: #fff;
+    height: 70px;
+    padding: 7px 20px 10px 30px;
+    color: #00000061;
+    font-size: 30.62px;
+    line-height: 40px;
+    font-family: 600;
+    border: 1px solid #CFDEE6;
+
+}
+.btnCity:hover{
+    background-color:rgba(224, 236, 236, 0.884)
+}
+.imgCalendar{
+    margin: 0;
+    width: 28px;
+    height: 30px;
+    /* margin-top: 2px; */
+}
+.qidirish{
+    font-family: 'Inter', sans-serif;
+    width: 250px;
+    border:none;
+    height: 70px;
+    background-color:#303383;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius:10px
+}
+.oneDriver{
+    padding: 0 20px;
+}
+.date-input-container {
+    position: relative;
+}
+
+.date-input-container .form-control {
+    padding-right: 30px; /* Add space for the icon */
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.h1RouterUser{
+    padding-top: 25px;
+    margin-left: 40px;  
+    color:white;
+}
+.h1RouterUser h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 75px;
+
+}
+.inputChild{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.inputs{
+    margin: 0 auto;
+    margin-bottom: 126px;
+    margin-top: 74px;
+    max-width: 1701px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.ketish{
+    width: 25%;
+      padding: 10px;
+      border:2px solid #cfdee6;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+
+}
+.routes12{
+    width: 25%;
+      padding: 10px;
+      border-top: 2px solid #cfdee6;
+      border-bottom: 2px solid #cfdee6;
+      border-right: 2px solid #cfdee6;
+
+}
+.joylar{
+    width: 25%;
+      padding: 10px;
+      border-top: 2px solid #cfdee6;
+      border-bottom: 2px solid #cfdee6;
+      border-right: 2px solid #cfdee6;
+
+}
+.userButtons{
+    width: 25%;
+      padding: 10px;
+      border-top: 2px solid #cfdee6;
+      border-bottom: 2px solid #cfdee6;
+      border-right: 2px solid #cfdee6;
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+
+}
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh; /* Ekran balandligini qamrab olish */
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-image {
+    width: 300px; /* O'lchamini sozlash */
+    height: 300px; /* O'lchamini sozlash */
+    animation: spin 1s linear infinite, moveRightLeft 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes moveRightLeft {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+.leftUserHeader{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 220px;
+    height: 39px;
+    cursor: pointer;
+}
+.locationImg{
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+.boglanish2{
+    display: none;
+}
+.allRoutes{
+    border-radius:5px;
+    max-width: 1700px;
+    background-color:white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 22px;
+}
+.topRoutesUser{
+    margin-right: 5px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.topRoutesUser h2{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 0;
+    line-height:44px
+}
+.topRoutesUser h3{
+    margin-left: 5px;
+    font-family: 'Inter', sans-serif;
+    color: red;
+    font-weight: 700;
+    font-size: 28px;
+    line-height:44px
+
+}
+.getRoutes{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 1040px;
+    /* padding-top: 22px; */
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 44px;
+}
+.days{
+    gap: 22px;
+    display: flex;
+}
+.btnDays{
+    font-family: 'Inter', sans-serif;
+    width: 135px;
+    height: 38px;
+    font-weight: 400;
+    border: 0.48px solid #2B3187;
+    border-radius:8px;
+    border:none;
+    background: #3033834F;
+    color:#000000;
+    font-size: 20px;
+    text-align: center;
+}
+.mapRoutes{
+    padding: 0px 30px;
+    margin: 15px auto;
+    width: 1347px;
+    height: 210px;
+    background-color:#2B318721;
+    border-radius:10px
+}
+.l1Child1{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    color:#000000;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    line-height: 37.91px;
+}
+h3{
+    margin: 0;
+}
+.li1{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.li1Child2{
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    /* border:1px solid; */
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    color:#000000;
+    font-weight: 500;
+    font-size: 32.14px;
+    line-height: 41.32px;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    margin: 0;
+}
+.li1Child2 img{
+    width: 105px;
+    color: #211F54;
+    /* box-shadow: 0 0 0 2.44px #211F54; */
+}
+.li1Child3{
+     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#000000;
+    font-weight: 500;
+    font-size: 34.13px;
+    line-height: 47.36px;
+    width: 250px;
+    /* border:1px solid; */
+    text-align: end;
+}
+.li2{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    /* margin: 0; */
+    padding: 0;
+}
+.l2Child1{
+    display: flex;
+    gap: 4px;
+    width: 260px;
+    /* border:1px solid; */
+    overflow: hidden;
+
+}
+.l2Child1 img{
+    margin: 0;
+    width: 39px;
+    height: 39px;
+}
+.li2Child2{
+    gap: 5px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 43px;
+}
+.li2Child2 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20.47px;
+    line-height: 29.25px;
+    color:#6E7191;
+}
+.li2Child2 h6{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size:35.76px;
+    line-height: 43.28px;
+    color:#000000;
+    margin-bottom: 0;
+}
+.li2Child3{
+    width: 280px;
+    /* border:1px solid; */
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.li2Child3 h6{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size:24px;
+    line-height:24.92px;
+    color:#6E7191;
+}
+.li2Child3 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:17.44px;
+    line-height:24.92px;
+    color:#6E7191;
+}
+.li3{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.l3Child1{
+    display: flex;
+    align-items:center;
+    gap: 40px;
+    
+
+}
+.l3Child1 h3{
+    width: auto;
+    font-weight: 500;
+    font-size:39.22px;
+    min-width: 350px;
+    font-family: 'Inter', sans-serif;
+    
+    /* border:1px solid; */
+    line-height:47.47px;
+    color:#000000;
+
+}
+.liDriverPhone{
+   height: 45px;
+   align-items:center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.liDriverPhone img{
+  width: 45px;
+  height: 45px;
+}
+.liDriverPhone p{
+    font-family: 'Roboto', sans-serif;
+    /* margin-top: 5px; */
+    font-weight: 400;
+    font-size:26.89px;
+    line-height:38.43px;
+    margin-bottom: 5px;
+    color:#6E7191;
+}
+.li3Child3{
+    display: flex;
+    align-items:center;
+    gap: 40px;
+}
+.li3Child3 button{
+    font-family: 'Inter', sans-serif;
+
+   width: 145.48px;
+   height: 36px ;
+   border-radius:7.5px;
+   border: 0.45px solid #2B3187;
+   background-color:#2B3187;
+   color:white;
+}
+.carType{
+    display: none;
+}
+.loader111{
+    width: 100%;
+    background-color:#E1E5F1;
+    border-radius:10px ;
+    margin: 0 auto;
+}
+.imgLoader{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.catchRoute{
+    padding-top: 20px;
+    width: 500px;
+    height: 320px;
+    margin: 0 auto;
+}
+.catchRoute h3{
+    text-align: center;
+    color:#303383;
+    font-family: 'Inter';
+    font-size: 28px;
+    font-weight: 600;
+}
+.imgCatchRoute{
+    /* border:1px solid; */
+    width: 500px;
+    height: 300px;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1550px) {
+    .imageBacground{
+        background-image: url("../../pictures/all.svg");
+      
+    }
+    .routUser{
+        max-width: 1550px;
+        margin: 0 auto;
+        background-color:white;
+        border-radius:0px, 0px, 5px, 5px;
+    }  
+    .h1RouterUser{
+        padding-top: 25px;
+        margin-left: 40px;  
+        color:white;
+    }
+    .h1RouterUser h1{
+        font-weight: 700;
+        font-size: 59px;
+        line-height: 70px;
+    
+    }
+
+    .inputs{
+        margin: 0 auto;
+        margin-bottom: 120px;
+        margin-top: 70px;
+        max-width: 1701px;
+
+    }
+    .btnCity{
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 15px;
+        background-color: #fff;
+        height: 70px;
+        padding: 7px 20px 10px 30px;
+        color: #00000061;
+        font-size: 28px;
+        line-height: 40px;
+        font-family: 600;
+        border: 1px solid #CFDEE6;
+    
+    }
+    .locationImg{
+        
+        width: 30px;
+        height: 30px;
+    }
+    .imgCalendar{
+        width: 28px;
+        height: 30px;
+    }
+    .allRoutes{
+        border-radius:5px;
+        max-width: 1350px;
+        background-color:white;
+        margin: 0 50px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .topRoutesUser h2{
+        /* display: flex; */
+        font-size: 22px;
+        font-family: 'Inter';
+        font-weight: 700;
+    }
+    .topRoutesUser h3{
+        margin-left: 5px;
+        font-family: 'Inter', sans-serif;
+        color: red;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .getRoutes{
+        margin: 0 auto;
+        width: 1005px;
+        padding-top: 22px;
+        margin-bottom: 30px;
+    }
+    .days{
+        gap: 22px;
+        display: flex;
+    }
+    .btnDays{
+        width: 135px;
+        height: 38px;
+        border: 0.48px solid #2B3187;
+        border-radius:8px;
+        border:none;
+        background: #3033834F;
+        color:#000000;
+        font-size: 20px;
+        text-align: center;
+    }
+    .mapRoutes{
+        padding: 0px 30px;
+        margin: 15px auto;
+        width: 1100px;
+        height: 200px;
+        background-color:#2B318721;
+        border-radius:10px
+    }
+    .li2{
+        margin-top: 10px;
+    }
+    .li3{
+        margin-top: 10px;
+    }
+    .l1Child1{
+        gap: 40px;
+        color:#000000;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32.91px;
+    }
+
+    .li1Child2{
+        width: 430px;
+        /* border:1px solid; */
+        font-weight: 500;
+        font-size: 29.14px;
+        line-height: 41.32px;
+    }
+ 
+    .li1Child2 img{
+        width: 105px;
+        color: #211F54;
+        /* box-shadow: 0 0 0 2.44px #211F54; */
+    }
+    .li1Child3{
+        font-weight: 500;
+        font-size: 30.13px;
+        line-height: 47.36px;
+        width: 200px;
+        /* border:1px solid; */
+        text-align: end;
+    }
+
+    .l2Child1{
+        display: flex;
+        gap: 4px;
+        width: 260px;
+        /* border:1px solid; */
+        overflow: hidden;
+    
+    }
+    .l2Child1 img{
+        width: 39px;
+        height: 39px;
+    }
+
+    .li2Child2 p{
+        font-weight: 400;
+        font-size: 19.47px;
+        line-height: 25.25px;
+        color:#6E7191;
+    }
+    .li2Child2 h6{
+        font-weight: 400;
+        font-size:34.76px;
+        line-height: 40.28px;
+        color:#000000;
+    }
+    .li2Child3{
+        width: 240px;
+        /* border:1px solid; */
+    }
+    .li2Child3 h6{
+        font-weight: 400;
+        font-size:20px;
+        line-height:24.92px;
+        color:#6E7191;
+    }
+    .li2Child3 p{
+        font-weight: 400;
+        font-size:17.44px;
+        line-height:24.92px;
+        color:#6E7191;
+    }
+
+    .l3Child1{
+        display: flex;
+        align-items:center;
+        gap: 30px;
+        
+    
+    }
+    .l3Child1 h3{
+        font-weight: 500;
+        font-size:35.22px;
+        width: auto;
+        min-width: 350px;
+        /* border:1px solid; */
+        line-height:43.47px;
+        color:#000000;
+    
+    }
+    .liDriverPhone{
+       
+        display: flex;
+        /* align-items:center; */
+        justify-content: center;
+        gap: 10px;
+    }
+    .liDriverPhone img{
+      width: 45px;
+      height: 45px;
+    }
+    .liDriverPhone p{
+        font-weight: 400;
+        font-size:23.89px;
+        line-height:35.43px;
+    }
+    .li3Child3{
+        display: flex;
+        align-items:center;
+        gap: 20px;
+    }
+    .li3Child3 button{
+       width: 130.48px;
+       height: 36px ;
+       border-radius:7.5px;
+       border: 0.45px solid #2B3187;
+       background-color:#2B3187;
+       color:white;
+       font-size:18px;
+    }
+    .carType{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1270px) and (max-width: 1400px) {
+    .imageBacground{
+        background-image: url("../../pictures/all.svg");
+     
+    }
+    .routUser{
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color:white;
+        border-radius:0px, 0px, 5px, 5px;
+    }  
+    .h1RouterUser{
+        padding-top: 25px;
+        margin-left: 40px;  
+        color:white;
+    }
+    .h1RouterUser h1{
+        font-weight: 700;
+        font-size: 59px;
+        line-height: 70px;
+    
+    }
+
+    .inputs{
+        margin: 0 auto;
+        margin-bottom: 120px;
+        margin-top: 70px;
+        max-width: 1701px;
+
+    }
+    .btnCity{
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 15px;
+        background-color: #fff;
+        height: 70px;
+        padding: 7px 20px 10px 30px;
+        color: #00000061;
+        font-size: 28px;
+        line-height: 40px;
+        font-family: 600;
+        border: 1px solid #CFDEE6;
+    
+    }
+    .locationImg{
+        width: 30px;
+        height: 30px;
+    }
+    .imgCalendar{
+        width: 28px;
+        height: 30px;
+    }
+    .allRoutes{
+        border-radius:5px;
+        max-width: 1200px;
+        background-color:white;
+        margin: 0 50px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .topRoutesUser h2{
+        /* display: flex; */
+        font-size: 22px;
+        font-family: 'Inter';
+        font-weight: 700;
+    }
+    .topRoutesUser h3{
+        margin-left: 5px;
+        font-family: 'Inter', sans-serif;
+        color: red;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .getRoutes{
+        margin: 0 auto;
+        width: 905px;
+        padding-top: 22px;
+        margin-bottom: 25px;
+    }
+    .days{
+        gap: 22px;
+        display: flex;
+    }
+    .btnDays{
+        width: 135px;
+        height: 38px;
+        border: 0.48px solid #2B3187;
+        border-radius:8px;
+        border:none;
+        background: #3033834F;
+        color:#000000;
+        font-size: 20px;
+        text-align: center;
+    }
+    .mapRoutes{
+        padding: 0px 30px;
+        margin: 15px auto;
+        width: 1000px;
+        height: 200px;
+        background-color:#2B318721;
+        border-radius:10px
+    }
+    .li2{
+        margin-top: 15px;
+    }
+    .li3{
+        margin-top: 15px;
+    }
+    .l1Child1{
+        gap: 40px;
+        color:#000000;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32.91px;
+    }
+
+    .li1Child2{
+        width: 430px;
+        /* border:1px solid; */
+        font-weight: 500;
+        font-size: 29.14px;
+        line-height: 41.32px;
+    }
+ 
+    .li1Child2 img{
+        width: 105px;
+        color: #211F54;
+        /* box-shadow: 0 0 0 2.44px #211F54; */
+    }
+    .li1Child3{
+        font-weight: 500;
+        font-size: 30.13px;
+        line-height: 47.36px;
+        width: 200px;
+        /* border:1px solid; */
+        text-align: end;
+    }
+
+    .l2Child1{
+        display: flex;
+        gap: 4px;
+        width: 260px;
+        /* border:1px solid; */
+        overflow: hidden;
+    
+    }
+    .l2Child1 img{
+        width: 39px;
+        height: 39px;
+    }
+
+    .li2Child2 p{
+        font-weight: 400;
+        font-size: 19.47px;
+        line-height: 25.25px;
+        color:#6E7191;
+    }
+    .li2Child2 h6{
+        font-weight: 400;
+        font-size:34.76px;
+        line-height: 40.28px;
+        color:#000000;
+    }
+    .li2Child3{
+        width: 240px;
+        /* border:1px solid; */
+    }
+    .li2Child3 h6{
+        font-weight: 400;
+        font-size:20px;
+        line-height:24.92px;
+        color:#6E7191;
+    }
+    .li2Child3 p{
+        font-weight: 400;
+        font-size:17.44px;
+        line-height:24.92px;
+        color:#6E7191;
+    }
+
+    .l3Child1{
+        display: flex;
+        align-items:center;
+        gap: 10px;
+        
+    
+    }
+    .l3Child1 h3{
+        width: auto;
+        font-weight: 500;
+        font-size:30px;
+       min-width: 300px;
+        /* border:1px solid; */
+        line-height:43.47px;
+        color:#000000;
+    
+    }
+    .liDriverPhone{
+       
+        display: flex;
+        /* align-items:center; */
+        justify-content: center;
+        gap: 10px;
+    }
+    .liDriverPhone img{
+      width: 45px;
+      height: 45px;
+    }
+    .liDriverPhone p{
+        font-weight: 400;
+        font-size:23.89px;
+        line-height:35.43px;
+    }
+    .li3Child3{
+        display: flex;
+        align-items:center;
+        gap: 20px;
+    }
+    .li3Child3 button{
+       width: 130.48px;
+       height: 36px ;
+       border-radius:7.5px;
+       border: 0.45px solid #2B3187;
+       background-color:#2B3187;
+       color:white;
+       font-size:18px;
+    }
+    .carType{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1270px) {
+    .navbar{
+         max-width: 1270px;
+         height: 100px;
+     }
+
+     .middleUserHeader{
+         display: flex;
+        width: 570px;
+        /* border:1px solid; */
+     }
+     .navbarUl{
+        padding: 0;
+     }
+     .navbarUl li{
+        margin-top: 20px;
+         font-size: 30px;
+         font-weight: 500;
+         line-height: 38.73px;
+     }
+     .rightUserHeader{
+        /* border:1px solid; */
+
+        width: 240px;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        }
+        .imgTelegram{
+            width: 40px;
+            height: 40px;
+        }
+        .rightUserHeader select{
+            margin-top: 2px;
+            border:none;
+                width: 145px;
+                height: 49px;
+                background-color:transparent;
+                font-weight: 500;
+                font-size: 25px;
+                /* line-height: 35.75; */
+                color:#303383;
+        }
+        .leftUserHeader{
+            margin-left: 20px;
+            width: 200px;
+            height: 39px;
+            cursor: pointer;
+        }
+
+    .imageBacground{
+        background-image: url("../../pictures/all.svg");
+      
+    }
+    .routUser{
+        max-width: 1270px;
+        margin: 0 auto;
+        background-color:white;
+        border-radius:0px, 0px, 5px, 5px;
+    }  
+    .h1RouterUser{
+        padding-top: 25px;
+        margin-left: 40px;  
+        color:white;
+    }
+    .h1RouterUser h1{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+    
+    }
+
+    .inputs{
+        margin: 0 auto;
+        margin-bottom: 120px;
+        margin-top: 70px;
+        max-width: 1100px;
+
+    }
+    .btnCity{
+        display: flex;
+        width: 260px;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 15px;
+        background-color: #fff;
+        height: 70px;
+        padding: 7px 20px 10px 10px;
+        color: #00000061;
+        font-size: 24px;
+        line-height: 30px;
+        font-family: 600;
+        border: 1px solid #CFDEE6;
+    
+    }
+    .qidirish{
+        width: 220px;
+        border:none;
+        height: 70px;
+        background-color:#303383;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        color:white;
+        font-weight: 600;
+        font-size: 25px;
+        border-radius:10px
+    }
+    .locationImg{
+        width: 27px;
+        height: 27px;
+    }
+    .imgCalendar{
+        width: 26px;
+        height: 28px;
+    }
+    .allRoutes{
+        border-radius:5px;
+        max-width: 1050px;
+        background-color:white;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .topRoutesUser h2{
+        font-size: 22px;
+    }
+    .topRoutesUser h3{
+   
+        font-size: 22px;
+    }
+    .getRoutes{
+        margin: 0 auto;
+        width: 905px;
+        padding-top: 22px;
+        margin-bottom: 25px;
+    }
+    .days{
+        gap: 22px;
+        display: flex;
+    }
+    .btnDays{
+        width: 135px;
+        height: 38px;
+        border: 0.48px solid #2B3187;
+        border-radius:8px;
+        border:none;
+        background: #3033834F;
+        color:#000000;
+        font-size: 20px;
+        text-align: center;
+    }
+    .mapRoutes{
+        padding: 0px 30px;
+        margin: 15px auto;
+        width: 1000px;
+        height: 180px;
+        background-color:#2B318721;
+        border-radius:10px
+    }
+    .l1Child1{
+        gap: 40px;
+        color:#000000;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32.91px;
+    }
+
+    .li1Child2{
+        width: 430px;
+        /* border:1px solid; */
+        font-weight: 500;
+        font-size: 29.14px;
+        line-height: 41.32px;
+    }
+ 
+    .li1Child2 img{
+        width: 105px;
+        color: #211F54;
+        /* box-shadow: 0 0 0 2.44px #211F54; */
+    }
+    .li1Child3{
+        font-weight: 500;
+        font-size: 30.13px;
+        line-height: 47.36px;
+        width: 200px;
+        /* border:1px solid; */
+        text-align: end;
+    }
+
+    .l2Child1{
+        display: flex;
+        gap: 4px;
+        width: 260px;
+        /* border:1px solid; */
+        overflow: hidden;
+    
+    }
+    .l2Child1 img{
+        width: 39px;
+        height: 39px;
+    }
+
+    .li2Child2 p{
+        font-weight: 400;
+        font-size: 19.47px;
+        line-height: 25.25px;
+        color:#6E7191;
+    }
+    .li2Child2 h6{
+        font-weight: 400;
+        font-size:34.76px;
+        line-height: 40.28px;
+        color:#000000;
+    }
+    .li2Child3{
+        width: 240px;
+        /* border:1px solid; */
+    }
+    .li2{
+        margin-top: 10px;
+    }
+    .li3{
+        margin-top: 10px;
+    }
+    .li2Child3 h6{
+        font-weight: 400;
+        font-size:20px;
+        line-height:24.92px;
+        color:#6E7191;
+    }
+    .li2Child3 p{
+        font-weight: 400;
+        font-size:17.44px;
+        line-height:24.92px;
+        color:#6E7191;
+    }
+
+    .l3Child1{
+        display: flex;
+        align-items:center;
+        gap: 30px;
+        
+    
+    }
+    .l3Child1 h3{
+        font-weight: 500;
+        width: auto;
+        min-width: 300px;
+        font-size: 28.5px;
+        /* border:1px solid; */
+        line-height:43.47px;
+        color:#000000;
+    
+    }
+    .liDriverPhone{
+       
+        display: flex;
+        /* align-items:center; */
+        justify-content: center;
+        gap: 10px;
+    }
+    .liDriverPhone img{
+      width: 45px;
+      height: 45px;
+    }
+    .liDriverPhone p{
+        font-weight: 400;
+        font-size:23.89px;
+        line-height:35.43px;
+    }
+    .li3Child3{
+        display: flex;
+        align-items:center;
+        gap: 20px;
+    }
+    .li3Child3 button{
+       width: 130.48px;
+       height: 36px ;
+       border-radius:7.5px;
+       border: 0.45px solid #2B3187;
+       background-color:#2B3187;
+       color:white;
+       font-size:18px;
+    }
+    .carType{
+        display: none;
+    }
+}
+@media only screen and (min-width: 920px) and (max-width: 1100px) {
+    .navbar{
+        max-width: 1100px;
+        height: 85px;
+    }
+
+    .middleUserHeader{
+        display: flex;
+       width: 500px;
+       /* border:1px solid; */
+    }
+    .navbarUl{
+       padding: 0;
+    }
+    .navbarUl li{
+        margin-top: 15px;
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 32.73px;
+    }
+    .rightUserHeader{
+       /* border:1px solid; */
+
+       width: 160px;
+       display: flex;
+       align-items:center;
+       justify-content: space-around;
+       }
+       .imgTelegram{
+           width: 40px;
+           height: 40px;
+       }
+       .rightUserHeader select{
+           border:none;
+               width: 130px;
+               height: 49px;
+               background-color:transparent;
+               font-weight: 500;
+               font-size: 23px;
+               /* line-height: 35.75; */
+               color:#303383;
+       }
+       .leftUserHeader{
+        margin-right: 5px;
+        margin-left: 20px;
+        width: 175px;
+        height: 39px;
+    }
+
+    .imageBacground{
+        background-image: url("../../pictures/all.svg");
+       
+    }
+    .routUser{
+        max-width: 1100px;
+        margin: 0 auto;
+        background-color:white;
+        border-radius:0px, 0px, 5px, 5px;
+    }  
+    .h1RouterUser{
+        padding-top: 20px;
+        margin-left: 30px;  
+        color:white;
+    }
+    .h1RouterUser h1{
+        font-size: 44px;
+        line-height: 60px;
+    
+    }
+
+    .inputs{
+        margin: 0 auto;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        max-width: 950px;
+
+    }
+    .btnCity{
+        display: flex;
+        width: 220px;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 15px;
+        background-color: #fff;
+        height: 60px;
+        padding: 7px 20px 10px 10px;
+        color: #00000061;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 600;
+        border: 1px solid #CFDEE6;
+    
+    }
+    .qidirish{
+        width: 200px;
+        border:none;
+        height: 60px;
+        background-color:#303383;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        color:white;
+        font-weight: 600;
+        font-size: 24px;
+        border-radius:10px
+    }
+    .locationImg{
+        width: 25px;
+        height: 25px;
+    }
+    .imgCalendar{
+        width: 24px;
+        height: 25px;
+    }
+    .allRoutes{
+        border-radius:5px;
+        max-width: 900px;
+        background-color:white;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .topRoutesUser{
+        margin-bottom: 5px;
+    }
+    .topRoutesUser h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .topRoutesUser h3{
+        font-size: 20px;
+        line-height: 25px;
+
+    }
+    .getRoutes{
+        margin: 0 auto;
+        width: 805px;
+        padding-top: 22px;
+        margin-bottom: 20px;
+    }
+    .days{
+        gap: 22px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .btnDays{
+        width: 115px;
+        height: 38px;
+        border: 0.48px solid #2B3187;
+        border-radius:8px;
+        border:none;
+        background: #3033834F;
+        color:#000000;
+        font-size: 18px;
+        text-align: center;
+    }
+    .mapRoutes{
+        padding: 0px 20px;
+        margin: 15px auto;
+        width: 800px;
+        height: 170px;
+        background-color:#2B318721;
+        border-radius:10px
+    }
+    .l1Child1{
+        gap: 30px;
+        color:#000000;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30.91px;
+    }
+
+    .li1Child2{
+        width: 350px;
+        /* border:1px solid; */
+        font-weight: 500;
+        font-size: 24.14px;
+        line-height: 30.32px;
+    }
+ 
+    .li1Child2 img{
+        width: 100px;
+        color: #211F54;
+        /* box-shadow: 0 0 0 2.44px #211F54; */
+    }
+    .li1Child3{
+        font-weight: 500;
+        font-size: 26.13px;
+        line-height: 35.36px;
+        width: 170px;
+        /* border:1px solid; */
+        text-align: end;
+    }
+
+    .l2Child1{
+        display: flex;
+        gap: 4px;
+        width: 235px;
+        /* border:1px solid; */
+        overflow: hidden;
+    
+    }
+    .l2Child1 img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .li2Child2 p{
+        font-weight: 400;
+        font-size: 17.47px;
+        line-height: 20.25px;
+        color:#6E7191;
+    }
+    .li2Child2 h6{
+        font-weight: 400;
+        font-size:32.76px;
+        line-height: 35.28px;
+        color:#000000;
+    }
+    .li2Child3{
+        width: 200px;
+        /* border:1px solid; */
+    }
+    .li2Child3 h6{
+        font-weight: 400;
+        font-size:17px;
+        line-height:20.92px;
+        color:#6E7191;
+    }
+    .li2{
+        margin-top: 10px;
+    }
+    .li3{
+        margin-top: 10px;
+    }
+    .li2Child3 p{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        font-weight: 400;
+        font-size:14.44px;
+        line-height:20.92px;
+        color:#6E7191;
+        margin-bottom: 0px;
+    }
+
+    .l3Child1{
+        display: flex;
+        align-items:center;
+        gap: 20px;
+        
+    
+    }
+    .l3Child1 h3{
+        font-weight: 500;
+        font-size:21px;
+        width: auto;
+        min-width: 200px;
+        /* border:1px solid; */
+        line-height:35.47px;
+        color:#000000;
+    
+    }
+    .liDriverPhone{
+       
+        display: flex;
+        /* align-items:center; */
+        justify-content: center;
+        gap: 10px;
+    }
+    .liDriverPhone img{
+      width: 45px;
+      height: 45px;
+    }
+    .liDriverPhone p{
+        font-weight: 400;
+        font-size:17.89px;
+        line-height:35.43px;
+    }
+    .li3Child3{
+        margin-left: 10px;
+        display: flex;
+        align-items:center;
+        gap: 20px;
+    }
+    .li3Child3 button{
+       width: 110.48px;
+       height: 36px ;
+       border-radius:7.5px;
+       border: 0.45px solid #2B3187;
+       background-color:#2B3187;
+       color:white;
+       font-size:16px;
+    }
+    .carType{
+        display: none;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 920px) {
+    .navbar{
+        max-width: 920px;
+        height: 70px;
+    }
+
+    .middleUserHeader{
+        display: flex;
+       width: 430px;
+       /* border:1px solid; */
+    }
+    .navbarUl{
+       padding: 0;
+    }
+    .navbarUl li{
+        margin-top: 20px;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 25.73px;
+    }
+    .rightUserHeader{
+       /* border:1px solid; */
+
+       width: 150px;
+       display: flex;
+       align-items:center;
+       justify-content: space-around;
+       }
+       .imgTelegram{
+           width: 35px;
+           height: 35px;
+       }
+       .rightUserHeader select{
+           border:none;
+               width: 110px;
+               height: 49px;
+               background-color:transparent;
+               font-weight: 500;
+               font-size: 18px;
+               /* line-height: 35.75; */
+               color:#303383;
+       }
+       .leftUserHeader{
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 20px;
+        width: 150px;
+        height: 39px;
+    }
+
+    .imageBacground{
+        background-image: url("../../pictures/all.svg");
+      
+    }
+    .routUser{
+        max-width: 920px;
+        margin: 0 auto;
+        background-color:white;
+        border-radius:0px, 0px, 5px, 5px;
+    }  
+    .h1RouterUser{
+        padding-top: 20px;
+        text-align: center;
+        color:white;
+    }
+    .h1RouterUser h1{
+        font-size: 37px;
+        line-height: 40px;
+    
+    }
+
+    .inputs{
+        margin: 0 auto;
+        margin-bottom: 100px;
+        margin-top: 30px;
+        max-width: 800px;
+
+    }
+    .btnCity{
+        display: flex;
+        width: 170px;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 10px;
+        background-color: #fff;
+        height: 50px;
+        padding: 7px 10px 10px 10px;
+        color: #00000061;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 600;
+        border: 1px solid #CFDEE6;
+    
+    }
+    .qidirish{
+        width: 170px;
+        border:none;
+        height: 50px;
+        background-color:#303383;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        color:white;
+        font-weight: 600;
+        font-size: 22px;
+        border-radius:10px
+    }
+    .locationImg{
+        width: 20px;
+        height: 20px;
+    }
+    .imgCalendar{
+        width: 20px;
+        height: 20px;
+    }
+    .allRoutes{
+        border-radius:5px;
+        max-width: 800px;
+        background-color:white;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .topRoutesUser{
+        margin-bottom: 10px;
+    }
+    .topRoutesUser h2{
+        font-size: 18px;
+    }
+    .topRoutesUser h3{
+   
+        font-size: 18px;
+    }
+    .getRoutes{
+        margin: 0 auto;
+        width: 705px;
+        padding-top: 15px;
+        margin-bottom: 20px;
+    }
+    .days{
+        gap: 15px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .btnDays{
+        width: 100px;
+        height: 38px;
+        border: 0.48px solid #2B3187;
+        border-radius:8px;
+        border:none;
+        background: #3033834F;
+        color:#000000;
+        font-size: 16px;
+        text-align: center;
+    }
+    .mapRoutes{
+        padding: 0px 15px;
+        margin: 15px auto;
+        width: 700px;
+        height: 160px;
+        background-color:#2B318721;
+        border-radius:10px
+    }
+    .l1Child1{
+        gap: 30px;
+        color:#000000;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25.91px;
+    }
+
+    .li1Child2{
+        width: 330px;
+        /* border:1px solid; */
+        font-weight: 500;
+        font-size: 22.5px;
+        line-height:25.32px;
+    }
+ 
+    .li1Child2 img{
+        width: 90px;
+        color: #211F54;
+        /* box-shadow: 0 0 0 2.44px #211F54; */
+    }
+    .li1Child3{
+        font-weight: 500;
+        font-size: 21.13px;
+        line-height: 35.36px;
+        width: 140px;
+        /* border:1px solid;/ */
+        text-align: end;
+    }
+
+    .l2Child1{
+        display: flex;
+        gap: 4px;
+        width: 215px;
+        /* border:1px solid; */
+        overflow: hidden;
+    
+    }
+    .l2Child1 img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .li2Child2 p{
+        font-weight: 400;
+        font-size: 15.47px;
+        line-height: 18.25px;
+        color:#6E7191;
+    }
+    .li2Child2 h6{
+        font-weight: 400;
+        font-size:28.76px;
+        line-height: 30.28px;
+        color:#000000;
+    }
+    .li2Child3{
+        width: 180px;
+        /* border:1px solid; */
+    }
+    .li2Child3 h6{
+        font-weight: 400;
+        font-size:16px;
+        line-height:20.92px;
+        color:#6E7191;
+    }
+    .li2Child3 p{
+        margin-top: 2px;
+        font-weight: 400;
+        font-size:12.44px;
+        line-height:20.92px;
+        color:#6E7191;
+        margin-bottom: 0px;
+    }
+.li2{
+    margin-top: 10px;
+}
+.li3{
+    margin-top: 10px;
+}
+    .l3Child1{
+        display: flex;
+        align-items:center;
+        gap: 20px;
+        
+    
+    }
+    .l3Child1 h3{
+        font-weight: 500;
+        font-size:18px;
+        width: auto;
+        min-width: 200px;
+        /* border:1px solid; */
+        line-height:30.47px;
+        color:#000000;
+    
+    }
+    .liDriverPhone{
+       
+        display: flex;
+        /* align-items:center; */
+        justify-content: center;
+        gap: 10px;
+    }
+    .liDriverPhone img{
+      width: 40px;
+      height: 40px;
+    }
+    .liDriverPhone p{
+        margin-top: 3px;
+        font-weight: 400;
+        font-size:15.89px;
+        line-height:20.43px;
+    }
+    .li3Child3{
+        margin-left: 10px;
+        display: flex;
+        align-items:center;
+        gap: 20px;
+    }
+    .li3Child3 button{
+       width: 100.48px;
+       height: 32px ;
+       border-radius:7.5px;
+       border: 0.45px solid #2B3187;
+       background-color:#2B3187;
+       color:white;
+       font-size:14px;
+    }
+    .carType{
+        display: none;
+    }
+}
+@media only screen and (min-width: 720px) and (max-width: 800px) {
+    .navbar{
+        max-width: 800px;
+        height: 60px;
+    }
+
+    .middleUserHeader{
+        display: flex;
+       width: 370px;
+       /* border:1px solid; */
+       margin-bottom: 10px;
+    }
+    .navbarUl{
+       padding: 0;
+      margin: 0;
+    }
+    .navbarUl li{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25.73px;
+    }
+    .rightUserHeader{
+       /* border:1px solid; */
+            margin-top: 0px;
+       width: 140px;
+       display: flex;
+       align-items:center;
+       justify-content: space-around;
+       }
+       .imgTelegram{
+           width: 30px;
+           height: 30px;
+       }
+       .rightUserHeader select{
+           border:none;
+               width: 110px;
+               height: 35px;
+               background-color:transparent;
+               font-weight: 500;
+               font-size: 18px;
+               /* line-height: 35.75; */
+               color:#303383;
+       }
+       .leftUserHeader{
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 20px;
+        width: 120px;
+        height: 30px;
+    }
+
+    .imageBacground{
+        background-image: url("../../pictures/all.svg");
+        
+    }
+    .routUser{
+        max-width: 800px;
+        margin: 0 auto;
+        background-color:white;
+        border-radius:0px, 0px, 5px, 5px;
+    }  
+    .h1RouterUser{
+        padding-top: 20px;
+        text-align: center;
+        color:white;
+    }
+    .h1RouterUser h1{
+        font-size: 34px;
+        line-height: 38px;
+    
+    }
+
+    .inputs{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        max-width: 800px;
+
+    }
+    .btnCity{
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 10px;
+        background-color: #fff;
+        height: 40px;
+        padding: 7px 10px 10px 10px;
+        color: #00000061;
+        font-size: 12px;
+        line-height: 25px;
+        font-family: 600;
+        border: 1px solid #CFDEE6;
+    
+    }
+    .qidirish{
+        width: 150px;
+        border:none;
+        height: 40px;
+        background-color:#303383;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        color:white;
+        font-weight: 600;
+        font-size: 18px;
+        border-radius:10px
+    }
+    .locationImg{
+        width: 18px;
+        height: 18px;
+    }
+    .imgCalendar{
+        width: 20px;
+        height: 20px;
+    }
+    .allRoutes{
+        border-radius:5px;
+        max-width: 700px;
+        background-color:white;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .topRoutesUser{
+        margin-bottom: 5px;
+    }
+    .topRoutesUser h2{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .topRoutesUser h3{
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .getRoutes{
+        margin: 0 auto;
+        width: 650px;
+        padding-top: 15px;
+        margin-bottom: 10px;
+    }
+    .days{
+        margin-bottom: 10px;
+        gap: 15px;
+        display: flex;
+    }
+    .btnDays{
+        width: 90px;
+        height: 38px;
+        border: 0.48px solid #2B3187;
+        border-radius:8px;
+        border:none;
+        background: #3033834F;
+        color:#000000;
+        font-size: 14px;
+        text-align: center;
+    }
+    .mapRoutes{
+        padding: 0px 20px;
+        margin: 15px auto;
+        width: 650px;
+        height: 150px;
+        background-color:#2B318721;
+        border-radius:10px
+    }
+    .l1Child1{
+        gap: 10px;
+        color:#000000;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25.91px;
+    }
+
+    .li1Child2{
+        width: 310px;
+        /* border:1px solid; */
+        font-weight: 500;
+        font-size: 20.5px;
+        line-height:25.32px;
+    }
+ 
+    .li1Child2 img{
+        width: 90px;
+        color: #211F54;
+        /* box-shadow: 0 0 0 2.44px #211F54; */
+    }
+    .li1Child3{
+        font-weight: 500;
+        font-size: 19.13px;
+        line-height: 30.36px;
+        width: 130px;
+        /* border:1px solid; */
+        text-align: end;
+    }
+
+    .l2Child1{
+        display: flex;
+        gap: 4px;
+        width: 215px;
+        /* border:1px solid; */
+        overflow: hidden;
+    
+    }
+    .l2Child1 img{
+        width: 32px;
+        height: 32px;
+    }
+    .li2{
+        margin-top: 10px;
+    }
+    .li3{
+        margin-top: 5px;
+    }
+    .li2Child2 p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18.25px;
+        color:#6E7191;
+    }
+    .li2Child2 h6{
+        font-weight: 400;
+        font-size:28.76px;
+        line-height: 30.28px;
+        color:#000000;
+    }
+    .li2Child3{
+        width: 180px;
+        /* border:1px solid; */
+    }
+    .li2Child3 h6{
+        font-weight: 400;
+        font-size:13px;
+        line-height:20.92px;
+        color:#6E7191;
+    }
+    .li2Child3 p{
+        margin-top: 1px;
+        font-weight: 400;
+        font-size:12.44px;
+        line-height:20.92px;
+        color:#6E7191;
+        margin-bottom: 0px;
+    }
+
+    .l3Child1{
+        display: flex;
+        align-items:center;
+        gap: 10px;
+        
+    
+    }
+    .l3Child1 h3{
+        font-weight: 500;
+        font-size:14px;
+        width: auto;
+        min-width: 180px;
+        /* border:1px solid; */
+        line-height:35.47px;
+        color:#000000;
+    
+    }
+    .liDriverPhone{
+       
+        display: flex;
+        /* align-items:center; */
+        justify-content: center;
+        gap: 10px;
+    }
+    .liDriverPhone img{
+      width: 40px;
+      height: 40px;
+    }
+    .liDriverPhone p{
+        margin-top: 8px;
+        font-weight: 400;
+        font-size:15.89px;
+        line-height:20.43px;
+    }
+    .li3Child3{
+        margin-left: 10px;
+        display: flex;
+        align-items:center;
+        gap: 20px;
+    }
+    .li3Child3 button{
+       width: 100.48px;
+       height: 32px ;
+       border-radius:7.5px;
+       border: 0.45px solid #2B3187;
+       background-color:#2B3187;
+       color:white;
+       font-size:14px;
+    }
+    .carType{
+        display: none;
+    }
+
+    .catchRoute{
+        width: 400px;
+        height: 320px;
+        margin: 0 auto;
+    }
+    .catchRoute h3{
+        text-align: center;
+        color:#303383;
+        font-family: 'Inter';
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .imgCatchRoute{
+        /* border:1px solid; */
+        width: 400px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 673px) and (max-width: 720px) {
+    .navbar{
+        gap: 5px;
+        padding: 0 20px;
+         max-width: 720px;
+         height: 70px;
+     }
+     .leftUserHeader{
+        margin-top: 5px;
+        margin-left:15px;
+        width: 120px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .middleUserHeader{
+        display: flex;
+       width: 350px;
+       /* border:1px solid; */
+       align-items:center;
+       justify-content: space-between;
+    }
+  .navbarUl{
+    margin-top: 7px;
+    padding: 0;
+  }
+     .navbarUl li{
+         font-size: 18px;
+         font-weight: 500;
+         line-height: 25.73px;
+     }
+     .rightUserHeader{
+        width: 120px;
+        }
+        .imgTelegram{
+            width: 30px;
+            height: 30px;
+        }
+        .rightUserHeader select{
+            border:none;
+                width: 100px;
+                height: 35px;
+                font-size: 16px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; /* Rasmni butun ekran bo'ylab to'g'ri kelishini ta'minlaydi */
+            background-position: center; /* Rasmni markazda joylashtiradi */
+            background-repeat: no-repeat; /* Rasmni takrorlamaslik uchun */
+            max-width: 720px;/* Ekran kengligini egallaydi */
+          
+            padding-bottom: 30px;
+            
+        }
+        .h1RouterUser{
+            padding-top: 20px;
+            margin-left: 0px;  
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 30px;
+            line-height:50px;
+        
+        }
+        .inputs{    
+            margin-bottom: 50px;
+            margin-top: 50px;
+            max-width: 720px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 80px;
+        }
+        .qidirish{
+            width: 100%;
+            height: 80px;
+            color:white;
+        }
+    .boglanish2{
+        display: block;
+    }
+
+.allRoutes{
+    border-radius:5px;
+    max-width: 720px;
+    background-color:white;
+    margin: 0 0px;
+    margin-bottom: 30px;
+    padding: 0 30px 30px 30px;
+}
+.topRoutesUser{
+ grid-row: 2;
+}
+.topRoutesUser h3{
+    font-size: 25px;
+    line-height: 30px;
+}
+.topRoutesUser h2{
+    margin: 0 auto;
+    align-items:center;
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+   
+}
+.getRoutes{
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 22px;
+    display: grid;
+  grid-template-rows: auto 1fr;
+  margin-bottom: 85px;
+}
+.days{
+    gap: 40px;
+    display: flex;
+    grid-row: 1;
+    /* margin-left: 50px; */
+}
+.btnDays{
+    width: 150px;
+    height: 45px;
+    border: 0.48px solid #2B3187;
+    border-radius:8px;
+    border:none;
+    background: #3033834F;
+    color:#000000;
+    font-size: 22px;
+    text-align: center;
+}
+.mapRoutes{
+    padding: 0px 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 240px;
+    background-color:#2B318721;
+    border-radius:10px
+}
+
+.l1Child1{
+    grid-column: 1;
+  grid-row: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    color:#000000;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22.91px;
+}
+h3{
+    margin: 0;
+}
+.li1{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 10px; 
+  
+}
+.li1Child2{
+    grid-column: 1 / -1; 
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    /* border:1px solid; */
+    display: flex;
+    align-items:center;
+    justify-content: center ;
+    gap: 20px;
+    color:#000000;
+    font-weight: 500;
+    font-size: 28.14px;
+    line-height: 29.32px;
+}
+.list-group-item{
+   margin-top: 10px !important;
+}
+p{
+    margin: 0;
+}
+.li1Child2 img{
+    width: 105px;
+    color: #211F54;
+    /* box-shadow: 0 0 0 2.44px #211F54; */
+}
+.li2Child3{
+    display: none;
+}
+.li1Child3{
+    grid-column: 3;
+    grid-row: 1;
+    margin: 0;
+    padding: 0;
+    color:#000000;
+    font-weight: 500;
+    font-size: 30.13px;
+    line-height: 33.36px;
+    width: 250px;
+    /* border:1px solid; */
+    text-align: end;
+}
+.li2{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.l2Child1{
+    display: flex;
+    gap: 3px;
+    width: 250px;
+    /* border:1px solid; */
+    overflow: hidden;
+
+}
+.l2Child1 img{
+    width: 35px;
+    height: 35px;
+}
+.li2Child2{
+    display: flex;
+    align-items:center;
+}
+.li2Child2 p{
+    font-weight: 400;
+    font-size: 17.47px;
+    line-height: 20.25px;
+    color:#6E7191;
+}
+.li2Child2 h6{
+    font-weight: 400;
+    font-size:30.76px;
+    line-height: 33.28px;
+    color:#000000;
+}
+
+.li2Child3 h6{
+    font-weight: 400;
+    font-size:24px;
+    line-height:24.92px;
+    color:#6E7191;
+}
+.li2Child3 p{
+    font-weight: 400;
+    font-size:17.44px;
+    line-height:24.92px;
+    color:#6E7191;
+}
+.li3{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.l3Child1{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 0px;
+    
+
+}
+.l3Child1 h3{
+    /* border:1px solid; */
+    width: auto;
+    font-weight: 500;
+    font-size:22px;
+    min-width: 280px;
+    line-height:35.47px;
+    color:#000000;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+}
+.liDriverPhone{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 16px;
+}
+.liDriverPhone img{
+  width: 40px;
+  height: 40px;
+}
+.liDriverPhone p{
+    font-weight: 400;
+    font-size:22.89px;
+    line-height:25.43px;
+    color:#6E7191;
+}
+.li3Child3{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    gap: 40px;
+}
+.li3Child3 button{
+   width: 145.48px;
+   height: 36px ;
+   border-radius:7.5px;
+   border: 0.45px solid #2B3187;
+   background-color:#2B3187;
+   color:white;
+}
+.carType{
+    display: block;
+}
+
+.catchRoute{
+    width: 400px;
+    height: 220px;
+    margin: 0 auto;
+}
+.catchRoute h3{
+    text-align: center;
+    color:#303383;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 600;
+}
+.imgCatchRoute{
+    /* border:1px solid; */
+    width: 400px;
+    height: 200px;
+}
+}
+@media only screen and (min-width: 602px) and (max-width: 673px) {
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 20px;
+         max-width: 672px;
+         height: 60px;
+     }
+     .leftUserHeader{
+        margin-top: 1px;
+        margin-left:15px;
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .middleUserHeader{
+       width: 300px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    padding: 0;
+    margin-top: 8px;
+  }
+     .navbarUl li{
+         font-size: 17px;
+         font-weight: 500;
+         line-height: 20.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 120px;
+        }
+        .imgTelegram{
+            width: 30px;
+            height: 30px;
+        }
+        .rightUserHeader select{
+            font-size: 13px;
+            border:none;
+                width: 90px;
+                height: 35px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; /* Rasmni butun ekran bo'ylab to'g'ri kelishini ta'minlaydi */
+            background-position: center; /* Rasmni markazda joylashtiradi */
+            background-repeat: no-repeat; /* Rasmni takrorlamaslik uchun */
+            max-width: 720px;/* Ekran kengligini egallaydi */
+          
+            padding-bottom: 30px;
+        }
+        .h1RouterUser{
+            padding-top: 20px;
+            margin-left: 0px;  
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 27px;
+            line-height:50px;
+        
+        }
+        .inputs{    
+            margin-bottom: 50px;
+            margin-top: 50px;
+            max-width: 720px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 80px;
+        }
+        .qidirish{
+            width: 100%;
+            height: 80px;
+            color:white;
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 672px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 30px 30px 30px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+        }
+        .topRoutesUser h2{
+            color: black;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 32px;
+            margin-top: 20px;
+            text-align: center;
+           
+        }
+        .topRoutesUser h3{
+            font-size: 25px;
+            line-height: 30px;
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 20px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          margin-bottom: 85px;
+        }
+        .days{
+            gap: 30px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+        }
+        .btnDays{
+            width: 150px;
+            height: 45px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 22px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 20px;
+            margin: 0 auto;
+            width: 100%;
+            height: 240px;
+            background-color:#2B318721;
+            border-radius:10px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 21.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 420px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: center ;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 26.14px;
+            line-height: 29.32px;
+        }
+        .list-group-item{
+           margin-top: 5px !important;
+        }
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            width: 105px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 27.13px;
+            line-height: 33.36px;
+            margin-right: 5px;
+            width: 250px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 250px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 35px;
+            height: 35px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:25px;
+            line-height: 31.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            width: auto;
+            min-width: 200px;
+            font-weight: 500;
+            font-size:19px;
+            line-height:30.47px;
+            color:#000000;
+            overflow: hidden;
+            margin-bottom: 7px;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .liDriverPhone img{
+          width: 40px;
+          height: 40px;
+        }
+        .liDriverPhone p{
+            font-weight: 400;
+            font-size:18.89px;
+            line-height:20.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 40px;
+        }
+        .li3Child3 button{
+           width: 145.48px;
+           height: 36px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           color:white;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:18.89px;
+            line-height:20.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            width: 400px;
+            height: 220px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 400px;
+            height: 200px;
+        }
+        
+}
+@media only screen and (min-width: 567px) and (max-width: 601px) {
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 20px;
+         max-width: 601px;
+         height: 55px;
+     }
+     .leftUserHeader{
+        margin-top: 7px;
+        margin-left:10px;
+        width: 90px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .middleUserHeader{
+       width: 280px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    padding: 0;
+    margin-top: 7px;
+  }
+     .navbarUl li{
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 18.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 120px;
+        }
+        .imgTelegram{
+            width: 30px;
+            height: 30px;
+        }
+        .rightUserHeader select{
+            margin: 0;
+            padding: 0 5px;
+            font-size: 13px;
+            border:none;
+                width: 80px;
+                height: 35px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; /* Rasmni butun ekran bo'ylab to'g'ri kelishini ta'minlaydi */
+            background-position: center; /* Rasmni markazda joylashtiradi */
+            background-repeat: no-repeat; /* Rasmni takrorlamaslik uchun */
+            max-width: 601px;/* Ekran kengligini egallaydi */
+           
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 20px;
+            margin-left: 0px;  
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 27px;
+            line-height:30px;
+        
+        }
+        .inputs{   
+            padding: 0 15px; 
+            margin-bottom: 30px;
+            margin-top: 30px;
+            max-width: 601px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 70px;
+            font-size: 25px;
+        }
+        .qidirish{
+            width: 100%;
+            height: 80px;
+            font-size: 25px;
+            color:white;
+        }
+
+        .allRoutes{
+            border-radius:5px;
+            max-width: 601px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 30px 30px 30px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+        }
+        .topRoutesUser h2{
+            color: black;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 28px;
+            margin-top: 15px;
+            text-align: center;
+           
+        }
+        .topRoutesUser h3{
+            font-size: 22px;
+            line-height: 28px;
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 15px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          margin-bottom: 70px;
+        }
+        .days{
+            gap: 30px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+        }
+        .btnDays{
+            width: 130px;
+            height: 45px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 19px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 20px;
+            margin: 0 auto;
+            width: 100%;
+            height: 240px;
+            background-color:#2B318721;
+            border-radius:10px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 21.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: end ;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 22.14px;
+            line-height: 29.32px;
+        }
+        .list-group-item{
+           margin-top: 10px !important;
+        }
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            width: 105px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 25.13px;
+            line-height: 28.36px;
+            margin-right: 5px;
+            width: 200px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 210px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 30px;
+            height: 30px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:28.76px;
+            line-height: 31.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            width: auto;
+            font-weight: 500;
+            min-width: 200px;
+            font-size:17px;
+            line-height:30.47px;
+            color:#000000;
+            overflow: hidden;
+            margin-bottom: 5px;
+        
+        }
+        .liDriverPhone{
+            margin-left: 5px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .liDriverPhone img{
+          width: 35px;
+          height: 35px;
+        }
+        .liDriverPhone p{
+            font-weight: 400;
+            font-size:16.89px;
+            line-height:18.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 40px;
+        }
+        .li3Child3 button{
+           width: 145.48px;
+           height: 36px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           color:white;
+           font-size: 20px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:17.89px;
+            line-height:20.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            padding-top: 0;
+            width: 350px;
+            height: 220px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 350px;
+            height: 200px;
+        }
+        
+}
+@media only screen and (min-width: 528px) and (max-width: 566px) {
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 15px;
+         max-width: 601px;
+         height: 60px;
+     }
+     .leftUserHeader{
+        margin-top: 5px;
+        margin-left:5px;
+        width: 90px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .middleUserHeader{
+       width: 280px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    padding: 0;
+    margin-top: 10px;
+  }
+     .navbarUl li{
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 18.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 95px;
+        margin-top: 1px;
+        }
+        .imgTelegram{
+            width: 25px;
+            height: 25px;
+        }
+        .rightUserHeader select{
+            margin: 0;
+            padding: 0 5px;
+            font-size: 11px;
+            border:none;
+                width: 70px;
+                height: 35px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            max-width: 601px;
+          
+            
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 20px;
+            margin-left: 0px;  
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 25px;
+            line-height:30px;
+        
+        }
+        .inputs{    
+            padding:0 15px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            max-width: 601px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 70px;
+            font-size: 25px;
+        }
+        .qidirish{
+            width: 100%;
+            height: 80px;
+            font-size: 25px;
+            color:white;
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 566px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 30px 30px 30px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+        }
+        .topRoutesUser h2{
+            color: black;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 15px;
+            text-align: center;
+           
+        }
+        .topRoutesUser h3{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 15px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          margin-bottom: 70px;
+        }
+        .days{
+            gap: 25px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+        }
+        .btnDays{
+            width: 125px;
+            height: 45px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 18px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 20px;
+            margin: 0 auto;
+            width: 100%;
+            height: 240px;
+            background-color:#2B318721;
+            border-radius:10px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 21.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 350px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: end ;
+            gap: 10px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 20.14px;
+            line-height: 27.32px;
+        }
+        .list-group-item{
+           margin-top: 5px !important;
+        }
+        p{
+            margin: 0;
+            text-align: end;
+        }
+        .li1Child2 img{
+            width: 105px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 22.13px;
+            line-height: 28.36px;
+            margin-right: 5px;
+            width: 180px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 180px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 27px;
+            height: 27px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:24px;
+            line-height: 31.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            width: auto;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-size:15.5px;
+            line-height:30.47px;
+            color:#000000;
+            overflow: hidden;
+            min-width: 200px;
+            margin-bottom: 5px;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+            margin-left: 5px;
+        }
+        .liDriverPhone img{
+          width: 32px;
+          height: 32px;
+        }
+        .liDriverPhone p{
+            font-weight: 400;
+            font-size:14.89px;
+            line-height:18.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .li3Child3 button{
+           width: 120.48px;
+           height: 36px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           font-weight: 400;
+           color:white;
+           font-size: 17px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:16.89px;
+            line-height:20.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            padding-top: 0;
+            width: 350px;
+            height: 220px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 350px;
+            height: 200px;
+        }
+}
+@media only screen and (min-width: 487px) and (max-width: 528px) {
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 15px;
+         max-width: 527px;
+         height: 60px;
+     }
+     .leftUserHeader{
+        margin-top: 5px;
+        margin-left:0px;
+        width: 100px;
+        height: 40px;
+    }
+    .middleUserHeader{
+       width: 245px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    padding: 0;
+    margin-top: 10px;
+  }
+     .navbarUl li{
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 18.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 85px;
+        margin-top: 5px;
+        }
+        .imgTelegram{
+            width: 25px;
+            height: 25px;
+        }
+        .rightUserHeader select{
+            border-radius:2px;
+            margin: 0; 
+            padding: 0 2px;
+            font-size: 10px;
+            border:none;
+                width: 60px;
+                height: 30px;
+                color:#303383;
+        }
+        .imageBacground{
+          
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            max-width: 601px;
+          
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 20px;
+            margin-left: 0px;  
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 22px;
+            line-height:30px;
+        
+        }
+        .inputs{    
+            padding:0 0px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            max-width: 601px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 60px;
+            font-size: 22px;
+
+        }
+        .qidirish{
+            width: 100%;
+            height: 60px;
+            font-size: 22px;
+            color:white;
+        }
+        .imgCalendar{
+            width: 25px;
+            height: 25px;
+            /* margin-top: 2px; */
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 527px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 30px 20px 20px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+         text-align: center;
+         justify-content: center;
+        }
+        .topRoutesUser h2{
+            justify-content: center ;
+            text-align: center;
+            color: black;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 28px;
+            margin-top: 10px;
+            text-align: center;
+           
+        }
+        .topRoutesUser h3{
+            font-size: 17px;
+            line-height: 28px;
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 15px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          margin-bottom: 60px;
+        }
+        .days{
+            gap: 20px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+        }
+        .btnDays{
+            width: 115px;
+            height: 45px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 17px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 10px;
+            margin: 0 auto;
+            width: 100%;
+            height: 240px;
+            background-color:#2B318721;
+            border-radius:10px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 21.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 320px;
+            /* border:1px solid;    */
+            display: flex;
+            align-items:center;
+            justify-content: end ;
+            gap: 12px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 17.14px;
+            line-height: 20.32px;
+        }
+        .list-group-item{
+           margin-top: 10px !important;
+        }
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            width: 100px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 21.13px;
+            line-height: 28.36px;
+            margin-right: 0px;
+            width: 160px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 180px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 25px;
+            height: 25px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 10.5px;
+            line-height: 14.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:23px;
+            line-height: 28.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            min-width: 200px;
+            font-weight: 500;
+            font-size:14.5px;
+            line-height:22.47px;
+            margin-bottom: 5px;
+            color:#000000;
+            overflow: hidden;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .liDriverPhone img{
+          width: 30px;
+          height: 30px;
+        }
+        .liDriverPhone p{
+            font-weight: 400;
+            font-size:13.89px;
+            line-height:18.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .li3Child3 button{
+           width: 115px;
+           height: 36px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           font-weight: 400;
+           color:white  ;
+           font-size: 15px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:17px;
+            line-height:20.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            padding-top: 0;
+            width: 350px;
+            height: 220px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 350px;
+            height: 200px;
+        }
+}
+@media only screen and (min-width: 412px) and (max-width: 487px) {
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 10px;
+         max-width: 466px;
+         height: 55px;
+     }
+     .leftUserHeader{
+       margin-bottom: 0px;
+        margin-left:0px;
+        width: 90px;
+        height: 40px;
+    }
+    .middleUserHeader{
+       width: 185px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    margin-top: 15px;
+    padding: 0;
+    justify-content: space-around;
+  }
+     .navbarUl li{
+         font-size: 15px;
+         font-weight: 500;
+         line-height: 15.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 90px;
+        margin-top: 5px;
+        }
+        .imgTelegram{
+            width: 20px;
+            height: 20px;
+        }
+        .rightUserHeader select{
+            border-radius:2px;
+            gap: 2px;
+            margin: 0; 
+            padding: 0 1px;
+            font-size: 12px;
+            border:none;
+                width: 70px;
+                height: 30px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            max-width: 466px;
+            
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 20px;
+            margin-left: 0px;  
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 19px;
+            line-height:30px;
+        
+        }
+        .inputs{    
+            padding:0 0px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            max-width: 601px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hide-first-item {
+            display: none !important;
+          }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 60px;
+            font-size: 22px;
+
+        }
+        .qidirish{
+            width: 100%;
+            height: 60px;
+            font-size: 22px;
+            color:white;
+        }
+        .imgCalendar{
+            width: 25px;
+            height: 25px;
+            /* margin-top: 2px; */
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 470px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 20px 20px 20px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+         justify-content: center;
+        }
+        .topRoutesUser h3{
+            font-size: 16px;
+            line-height: 28px;
+        }
+        .topRoutesUser h2{
+            color: black;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 15px;
+            text-align: center;
+           
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 10px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          margin-bottom: 60px;
+        }
+        .days{
+            gap: 20px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+        }
+        .list-group-item {
+            margin-top: 5px !important;
+        }
+        .btnDays{
+            width: 95px;
+            height: 40px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 14px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 10px;
+            margin: 15px auto;
+            width: 100%;
+            height: 210px;
+            background-color:#2B318721;
+            border-radius:8px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 14.5px;
+            line-height: 18.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 320px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: center ;
+            gap: 10px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 15.5px;
+            line-height: 25.32px;
+        }
+      
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            width: 80px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 18.13px;
+            line-height: 22.36px;
+            margin-right: 0px;
+            width: 140px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 160px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 23px;
+            height: 23px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 14.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:20px;
+            line-height: 28.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            min-width: 160px;
+            font-weight: 500;
+            font-size:13px;
+            line-height:22.47px;
+            color:#000000;
+            overflow: hidden;
+            margin-bottom: 7px;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+            height: 30px;
+        }
+        .liDriverPhone img{
+          width: 25px;
+          height: 25px;
+        }
+        .liDriverPhone p{
+            font-weight: 400;
+            font-size:11.89px;
+            line-height:13.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 15px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .li3Child3 button{
+           width: 100px;
+           height: 32px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           font-weight: 400;
+           color:white  ;
+           font-size: 13px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:14px;
+            line-height:15.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            padding-top: 0;
+            width: 300px;
+            height: 220px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 300px;
+            height: 200px;
+        }
+}
+@media only screen and (min-width: 397px) and (max-width: 411px) {
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 10px;
+         max-width: 411px;
+         height: 50px;
+     }
+     .hide-first-item {
+        display: none !important;
+      }
+     .leftUserHeader{
+       margin-bottom: 0px;
+        margin-left:0px;
+        width: 80px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .middleUserHeader{
+       width: 185px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    padding: 0;
+    margin-top: 15px;
+    justify-content: space-around;
+  }
+     .navbarUl li{
+         font-size: 15px;
+         font-weight: 500;
+         line-height: 15.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 85px;
+        margin-top: 2px;
+        }
+        .imgTelegram{
+            width: 20px;
+            height: 20px;
+        }
+        .rightUserHeader select{
+            border-radius:2px;
+            gap: 2px;
+            margin: 0; 
+            padding: 0 1px;
+            font-size: 10px;
+            font-family: 'Inter';
+            font-weight: 600;
+            border:none;
+                width: 65px;
+                height: 30px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            max-width: 466px;
+         
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 20px;
+            margin-left: 0px;  
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 18px;
+            line-height:30px;
+        
+        }
+        .inputs{    
+            padding:0 0px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            max-width: 601px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 60px;
+            font-size: 22px;
+
+        }
+        .qidirish{
+            width: 100%;
+            height: 60px;
+            font-size: 22px;
+            color:white;
+        }
+        .imgCalendar{
+            width: 25px;
+            height: 25px;
+            /* margin-top: 2px; */
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 411px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 20px 20px 20px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+         justify-content: center;
+        }
+        .topRoutesUser h3{
+            font-size: 15px;
+            line-height: 24px;
+        }
+        .topRoutesUser h2{
+            color: black;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            margin-top: 15px;
+            text-align: center;
+           
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 10px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          margin-bottom: 50px;
+        }
+        .days{
+            gap: 10px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+            align-items:center;
+          justify-content: center;
+        }
+        .btnDays{
+            width: 100px;
+            height: 37px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 14px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 10px;
+            margin: 10px auto;
+            width: 100%;
+            height: 210px;
+            background-color:#2B318721;
+            border-radius:8px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 285px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: center ;
+            gap: 10px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 25.32px;
+        }
+        .list-group-item{
+           margin-top: 0px !important;
+        }
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            width: 80px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 17.13px;
+            line-height: 22.36px;
+            margin-right: 0px;
+            width: 120px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 160px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 23px;
+            height: 23px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 14.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:20px;
+            line-height: 28.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            width: 100%;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            width: auto;
+            min-width: 100px;
+            font-weight: 500;
+            font-size:12px;
+            line-height:18.47px;
+            margin-bottom: 4px;
+            color:#000000;
+            overflow: hidden;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .liDriverPhone img{
+          width: 25px;
+          height: 25px;
+        }
+        .liDriverPhone p{
+            margin-top: 4px;
+            font-weight: 400;
+            font-size:11.89px;
+            line-height:13.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 15px;
+        }
+        .li3Child3 button{
+           width: 100px;
+           height: 32px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           font-weight: 400;
+           color:white  ;
+           font-size: 13px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:14px;
+            line-height:15.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            width: 300px;
+            height: 220px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 300px;
+            height: 200px;
+        }
+        
+}
+@media only screen and (min-width: 357px) and (max-width: 396px) {
+    .hide-first-item {
+        display: none !important;
+      }
+    .boglanish2{
+    display: block;
+}
+    .navbar{
+        gap: 5px;
+        padding: 0 5px;
+         max-width: 396px;
+         height: 50px;
+     }
+     .logoImg{
+        object-fit: scale-down;
+     }
+     .leftUserHeader{
+       margin-bottom: 5px;
+        margin-left:0px;
+        width: 70px;
+        height: 25px;
+    }
+    .middleUserHeader{
+       width: 165px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    margin-top: 12px;
+    padding: 0;
+    justify-content: space-around;
+  }
+     .navbarUl li{
+         font-size: 13px;
+         font-weight: 500;
+         line-height: 15.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 85px;
+        margin-top: 0px;
+        }
+        .imgTelegram{
+            width: 20px;
+            height: 20px;
+        }
+        .rightUserHeader select{
+            border-radius:2px;
+            gap: 2px;
+            margin: 0; 
+            padding: 0 1px;
+            font-size: 10px;
+            border:none;
+
+                width: 65px;
+                height: 30px;
+                color:#303383;
+        }
+
+        .imageBacground{
+            padding: 0;
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            max-width: 466px;
+           
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 10px;
+            margin-left: 0px; 
+            margin-bottom: 0; 
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 16px;
+            line-height:30px;
+        
+        }
+        .inputs{    
+            padding:0 0px;
+            margin-bottom: 30px;
+            margin-top: 15px;
+            max-width: 601px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 60px;
+            font-size: 22px;
+
+        }
+        .qidirish{
+            width: 100%;
+            height: 60px;
+            font-size: 22px;
+            color:white;
+        }
+        .imgCalendar{
+            width: 25px;
+            height: 25px;
+            /* margin-top: 2px; */
+        }
+        .locationImg{
+            width: 25px;
+            height: 25px;
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 396px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 20px 20px 20px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+         justify-content: center;
+        }
+        .topRoutesUser h2{
+            align-items:center;
+            color: black;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            margin-top: 10px;
+            text-align: center;
+           
+        }
+        .topRoutesUser h3{
+            font-size: 13px;
+            line-height: 28px;
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 10px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          align-items:center;
+          justify-content: center;
+          margin-bottom: 40px;
+        }
+        .days{
+            
+            /* margin-left: 10px; */
+            gap: 10px;
+            display: flex;
+            align-items:center;
+            grid-row: 1;
+            /* margin-left: 50px; */
+        }
+        .btnDays{
+            width: 85px;
+            height: 33px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 13px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 7px;
+            margin: 0 auto;
+            width: 100%;
+            height: 180px;
+            background-color:#2B318721;
+            border-radius:8px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 285px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: center ;
+            gap: 3px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17.32px;
+        }
+        .list-group-item{
+           margin-top: 3px !important;
+        }
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            margin: 0;
+            width: 70px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 16.13px;
+            line-height: 22.36px;
+            margin-right: 0px;
+            width: 110px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 160px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 20px;
+            height: 20px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 12.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:19.76px;
+            line-height: 21.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            width: 100%;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            width: auto;
+            min-width: 100px;
+            font-weight: 500;
+            font-size:12px;
+            line-height:16.47px;
+            color:#000000;
+            overflow: hidden;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+            height: 22px;
+        }
+        .liDriverPhone img{
+          width: 22px;
+          height: 22px;
+        }
+        .liDriverPhone p{
+            font-weight: 400;
+            font-size:10.89px;
+            line-height:13.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 5px;
+            display: flex;
+            align-items:center;
+            gap: 10px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .li3Child3 button{
+           width: 90px;
+           height: 30px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           font-weight: 400;
+           color:white  ;
+           font-size: 12px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:13px;
+            line-height:15.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            padding-top: 0;
+            width: 250px;
+            height: 170px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 250px;
+            height: 150px;
+        }
+}
+@media only screen and (min-width: 331px) and (max-width: 357px) {
+    .hide-first-item {
+        display: none !important;
+      }
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 5px;
+         max-width: 352px;
+         height: 50px;
+     }
+     .leftUserHeader{
+       margin-bottom: 5px;
+        margin-left:0px;
+        width: 60px;
+        height: 40px;
+    }
+    .middleUserHeader{
+       width: 160px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    padding: 0;
+    margin-top: 13px;
+    justify-content: space-around;
+  }
+     .navbarUl li{
+         font-size: 13px;
+         font-weight: 500;
+         line-height: 12.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 75px;
+        margin-top: 0px;
+        }
+        .imgTelegram{
+            width: 17px;
+            height: 17px;
+        }
+        .rightUserHeader select{
+            border-radius:2px;
+            gap: 2px;
+            margin: 0; 
+            padding: 0 1px;
+            font-size: 8.5px;
+            border:none;
+                width: 60px;
+                height: 30px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            max-width: 466px;
+           
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 10px;
+            margin-left: 0px; 
+            margin-bottom: 0; 
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 14.5px;
+            line-height:30px;
+        
+        }
+        .inputs{    
+            padding:0 0px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            max-width: 352px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 50px;
+            font-size: 20px;
+
+        }
+        .qidirish{
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            color:white;
+        }
+        .imgCalendar{
+            width: 20px;
+            height: 20px;
+            /* margin-top: 2px; */
+        }
+        .locationImg{
+            width: 22px;
+            height: 22px;
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 352px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 30px;
+            padding: 0 10px 10px 10px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+         justify-content: center;
+        }
+        .topRoutesUser h3{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .topRoutesUser h2{
+            align-items:center;
+            color: black;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 10px;
+            text-align: center;
+           
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 10px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          justify-content: center;
+          margin-bottom: 35px;
+        }
+        .days{
+            gap: 15px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+            
+        }
+        .btnDays{
+            width: 75px;
+            height: 33px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 11px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 7px;
+            margin: 15px auto;
+            width: 100%;
+            height: 180px;
+            background-color:#2B318721;
+            border-radius:8px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 15.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            overflow: hidden;
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 250px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: start ;
+            gap: 10px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17.32px;
+            justify-content: center;
+        }
+        .list-group-item{
+           margin-top: 0px !important;
+        }
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            width: 60px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 16.13px;
+            line-height: 18.36px;
+            margin-right: 0px;
+            width: 110px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 110px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 15px;
+            height: 15px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 12.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:19.76px;
+            line-height: 21.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            width: 100%;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            min-width: 100px;
+            width: auto;
+            font-weight: 500;
+            font-size:14px;
+            line-height:16.47px;
+            color:#000000;
+            overflow: hidden;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+            height: 25px;
+        }
+        .liDriverPhone img{
+          width: 22px;
+          height: 22px;
+        }
+        .liDriverPhone p{
+            font-weight: 400;
+            font-size:10.89px;
+            line-height:13.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 10px;
+        }
+        .li3Child3 button{
+           width: 90px;
+           height: 30px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           font-weight: 400;
+           color:white  ;
+           font-size: 12px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:13px;
+            line-height:15.43px;
+            color:#6E7191;
+
+        }
+        .catchRoute{
+            padding-top: 0;
+            width: 250px;
+            height: 170px;
+            margin: 0 auto;
+        }
+        .catchRoute h3{
+            text-align: center;
+            color:#303383;
+            font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .imgCatchRoute{
+            /* border:1px solid; */
+            width: 250px;
+            height: 150px;
+        }
+}
+@media(max-width: 331px) {
+    .hide-first-item {
+        display: none !important;
+      }
+    .catchRoute{
+        padding-top: 0;
+        width: 200px;
+        height: 170px;
+        margin: 0 auto;
+    }
+    .catchRoute h3{
+        text-align: center;
+        color:#303383;
+        font-family: 'Inter';
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .imgCatchRoute{
+        /* border:1px solid; */
+        width: 200px;
+        height: 150px;
+    }
+    .boglanish2{
+        display: block;
+    }
+    .navbar{
+        gap: 5px;
+        padding: 0 5px;
+         max-width: 327px;
+         height: 50px;
+     }
+     .leftUserHeader{
+       margin-bottom: 5px;
+        margin-left:0px;
+        width: 60px;
+        height: 30px;
+    }
+    .middleUserHeader{
+       width: 140px;
+       /* border:1px solid; */
+    }
+  .navbarUl{
+    padding: 0;
+    margin-top: 8px;
+    justify-content: space-around;
+  }
+     .navbarUl li{
+         font-size: 11px;
+         font-weight: 500;
+         line-height: 12.73px;
+     }
+     .rightUserHeader{
+       /* border:1px solid; */
+        width: 60px;
+        margin-top: 0px;
+        }
+        .imgTelegram{
+           display: none;
+        }
+        .rightUserHeader select{
+            border-radius:2px;
+            gap: 2px;
+            margin: 0; 
+            padding: 0 1px;
+            font-size: 9px;
+            border:none;
+                width: 60px;
+                height: 30px;
+                color:#303383;
+        }
+        .imageBacground{
+            background-image: url("../../pictures/b6.svg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            max-width: 327px;
+           
+            padding-bottom: 20px;
+        }
+        .h1RouterUser{
+            padding-top: 10px;
+            margin-left: 0px; 
+            margin-bottom: 0; 
+        }
+        .h1RouterUser h1{
+            text-align: center;
+            font-size: 13.5px;
+            line-height:30px;
+        
+        }
+        .inputs{    
+            padding:0 0px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            max-width: 352px;
+            flex-wrap: wrap;
+        }
+        .inputChild{
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btnCity{
+            width: 100%;
+            background-color: #fff;
+            height: 50px;
+            font-size: 20px;
+
+        }
+        .qidirish{
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            color:white;
+        }
+        .imgCalendar{
+            width: 20px;
+            height: 20px;
+            /* margin-top: 2px; */
+        }
+        .locationImg{
+            width: 22px;
+            height: 22px;
+        }
+        .allRoutes{
+            border-radius:5px;
+            max-width: 327px;
+            background-color:white;
+            margin: 0 0px;
+            margin-bottom: 20px;
+            padding: 0 10px 10px 10px;
+        }
+        .topRoutesUser{
+         grid-row: 2;
+         justify-content: center;
+        }
+        .topRoutesUser h3{
+            font-size: 9px;
+            line-height: 10px;
+        }
+        .topRoutesUser h2{
+            align-items:center;
+            width: 200px;
+            margin-left: 10px;
+            /* border:1px solid; */
+            color: black;
+            font-weight: 500;
+            font-size: 9px;
+            line-height: 10px;
+            margin-top: 10px;
+            justify-content: center;
+           
+        }
+        .getRoutes{
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 10px;
+            display: grid;
+          grid-template-rows: auto 1fr;
+          justify-content: center;
+          margin-bottom: 25px;
+        }
+        .days{
+            gap: 15px;
+            display: flex;
+            grid-row: 1;
+            /* margin-left: 50px; */
+        }
+        .btnDays{
+            width: 65px;
+            height: 30px;
+            border: 0.48px solid #2B3187;
+            border-radius:8px;
+            border:none;
+            background: #3033834F;
+            color:#000000;
+            font-size: 10px;
+            text-align: center;
+        }
+        .mapRoutes{
+            padding: 0px 7px;
+            margin: 10px auto;
+            width: 100%;
+            height: 160px;
+            background-color:#2B318721;
+            border-radius:8px
+        }
+        
+        .l1Child1{
+            grid-column: 1;
+          grid-row: 1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 5px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 15.91px;
+        }
+        h3{
+            margin: 0;
+        }
+        .li1{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            display: grid !important;
+            grid-template-columns: 1fr auto 1fr; 
+            grid-template-rows: auto auto; 
+            gap: 10px; 
+          
+        }
+        .li1Child2{
+            overflow: hidden;
+            grid-column: 1 / -1; 
+            grid-row: 2;
+            margin: 0;
+            padding: 0;
+            width: 220px;
+            /* border:1px solid; */
+            display: flex;
+            align-items:center;
+            justify-content: start ;
+            gap: 5px;
+            color:#000000;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12.32px;
+            justify-content: center;
+        }
+        .list-group-item{
+           margin-top: 5px !important;
+        }
+        p{
+            margin: 0;
+        }
+        .li1Child2 img{
+            width: 50px;
+            color: #211F54;
+            /* box-shadow: 0 0 0 2.44px #211F54; */
+        }
+        .li2Child3{
+            display: none;
+        }
+        .li1Child3{
+            grid-column: 3;
+            grid-row: 1;
+            margin: 0;
+            padding: 0;
+            color:#000000;
+            font-weight: 500;
+            font-size: 14.13px;
+            line-height: 18.36px;
+            margin-right: 0px;
+            width: 100px;
+            /* border:1px solid; */
+            text-align: end;
+        }
+        .li2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+        .l2Child1{
+            display: flex;
+            gap: 3px;
+            width: 90px;
+            /* border:1px solid; */
+            overflow: hidden;
+        
+        }
+        .l2Child1 img{
+            width: 12px;
+            height: 12px;
+        }
+        .li2Child2{
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            height: 25px;
+        }
+        .li2Child2 p{
+            font-weight: 400;
+            font-size: 8.5px;
+            line-height: 12.25px;
+            color:#6E7191;
+        }
+        .li2Child2 h6{
+            font-weight: 400;
+            font-size:17px;
+            line-height: 21.28px;
+            color:#000000;
+        }
+        
+       
+        .li3{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .l3Child1{
+            width: 100%;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            gap: 0px;
+            
+        
+        }
+        .l3Child1 h3{
+            /* border:1px solid; */
+            width: auto;
+            min-width: 100px;
+            font-weight: 500;
+            font-size:12px;
+            line-height:14.47px;
+            color:#000000;
+            overflow: hidden;
+        
+        }
+        .liDriverPhone{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+            height: 25px;
+        }
+        .liDriverPhone img{
+          width: 20px;
+          height: 20px;
+        }
+        .liDriverPhone p{
+            margin-top: 3px;
+            font-weight: 400;
+            font-size:9.89px;
+            line-height:10.43px;
+            color:#6E7191;
+        }
+        .li3Child3{
+            margin-top: 10px;
+            display: flex;
+            align-items:center;
+            gap: 10px;
+           
+        }
+        .li3Child3 button{
+           width: 80px;
+           height: 28px ;
+           border-radius:7.5px;
+           border: 0.45px solid #2B3187;
+           background-color:#2B3187;
+           font-weight: 400;
+           color:white  ;
+           font-size: 10.5px;
+        }
+        .carType{
+            display: block;
+            font-weight: 400;
+            font-size:11px;
+            line-height:15.43px;
+            color:#6E7191;
+
+        }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

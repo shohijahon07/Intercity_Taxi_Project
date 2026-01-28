@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .big_mean {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    max-width: 100%;
+  }
+  
+  .card1 {
+    margin: 0;
+    padding: 20px;
+    width: 300px;
+    height: 320px;
+    background-color:white;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+    /* border:1px solid black; */
+  }
+  
+  .card1 h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Inter';
+    margin-bottom: 0px;
+    line-height: 30px;
+  }
+  
+  .input-field {
+    border: none !important;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .input-field input {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    /* border:1px solid black; */
+    padding: 10px 40px 10px 15px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-field input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .buttonS {
+    margin-top: 40px;
+    background-color: #0081ff;
+    color: #ffffff;
+    border: none;
+    width: 90%;
+
+    font-size: 15px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    transition: color 0.3s;
+  }
+  
+  .eye-icon:hover {
+    color: #007BFF;
+  }
+  
+  .buttonS:hover {
+    background-color: #ff4f70;
+  }
+  
+@media only screen and (min-width: 400px) and (max-width: 720px) {
+    .card1 {
+        margin: 0;
+        padding: 20px;
+        width: 280px;
+        height: 320px;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+        /* border:1px solid black; */
+      }
+      
+      .card1 h1 {
+        font-size: 30px;
+      }
+      .buttonS {
+        background-color: #0081ff;
+        color: #ffffff;
+        border: none;
+        width: 90%;
+        font-size: 15px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+      
+      .eye-icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: #888;
+        transition: color 0.3s;
+      }
+}
+@media only screen and (min-width: 400px) and (max-width: 720px) {
+    .card1 {
+        margin: 0;
+        padding: 20px;
+        width: 250px;
+        height: 320px;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.15);
+        /* border:1px solid black; */
+      }
+      
+      .card1 h1 {
+        font-size: 30px;
+      }
+      .buttonS {
+        background-color: #0081ff;
+        color: #ffffff;
+        border: none;
+        width: 90%;
+        font-size: 15px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+      
+      .eye-icon {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: #888;
+        transition: color 0.3s;
+      }
+}
+ 
+  

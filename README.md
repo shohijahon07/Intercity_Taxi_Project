@@ -24,6 +24,7 @@ The project helps manage taxi routes, passengers, and trip information between d
 - Hibernate (JPA)
 - REST API
 - Maven
+- Telegram bot (Java)
 
 ---
 
@@ -59,8 +60,6 @@ Entity layer – data models
 📱 Mobile & web client integration
 
 📍 Live location tracking
-
-💳 Online payment system
 
 📊 Driver performance statistics
 
